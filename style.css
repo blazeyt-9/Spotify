@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Figtree' , sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 45px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 62vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 80%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.bottom{
+    position: sticky;
+    height: 90px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 6px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 50vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 30px;
+}
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: rgb(63, 63, 63);
+    color: rgb(255, 255, 255);
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 33px;
+    margin: 0 4px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    top: 1vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    width: 75px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 747px) {
+    body {
+      background-color: rgb(49, 49, 49);
+    }
+    .songItem{
+        height: auto;
+        background-color: rgb(20, 20, 20);
+    }
+    .bottom{
+        height: 100px;
+    }
+    nav ul{
+        height: 50px;
+    
+    }
+    nav ul li{
+        font-size: 85%;
+    }
+    .brand{
+        font-size: 1.1rem;
+    }
+    .brand img{
+        width: 30px;
+    }
+  }
