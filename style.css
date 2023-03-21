@@ -127,7 +127,7 @@ nav ul li{
         background-color: rgb(20, 20, 20);
     }
     .bottom{
-        height: 100px;
+        height: 150px;
     }
     nav ul{
         height: 50px;
@@ -141,5 +141,14 @@ nav ul li{
     }
     .brand img{
         width: 30px;
+    }
+    #myProgressBar{
+        width: 60vw; 
+    }
+    .songInfo{
+        left: 9vw;
+    }
+    .songInfo img{
+        width: 18%;
     }
   }
